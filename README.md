@@ -1,6 +1,6 @@
 #APUE Practice
 #Intro
-APUE: Advanced Programming in the UNIX Environment   
+- APUE: Advanced Programming in the UNIX Environment   
 This project is built for my APUE learning practice.  
 
 #Structure
