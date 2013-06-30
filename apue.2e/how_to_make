@@ -1,0 +1,10 @@
+This is the modified apue src.
+
+Changes:
+
+std/linux.mk - change nawk to awk
+Make.defines.linux - change WKDIR to correct dir path
+ipp/ipp.h - change #define status to #define ustatus (line 122)
+   /printd.c - change hp->status to hp->ustatus (line 977)
+threadctl/getenv1.c - add #define ARG_MAX 4096
+         /getenv3.c - add #define ARG_MAX 4096
