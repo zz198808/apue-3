@@ -8,3 +8,15 @@ ipp/ipp.h - change #define status to #define ustatus (line 122)
    /printd.c - change hp->status to hp->ustatus (line 977)
 threadctl/getenv1.c - add #define ARG_MAX 4096
          /getenv3.c - add #define ARG_MAX 4096
+
+Steps:
+
+- As above, most of the files have been changed, just need to change one file: Make.defines.linux
+1. Change WKDIR to your work directory
+2. make
+3. sudo cp include/apue.h /usr/include/
+4. sudo cp lib/libapue.a /usr/lib/
+
+Usage:
+Add the library(libapue.a) when compile your code.
+e.g. cc -o test test.c -lapue
